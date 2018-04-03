@@ -1,0 +1,189 @@
+html,
+body {
+  height: 100%;
+  max-width: 1440px;
+}
+
+body {
+  font-family: 'Open sans', sans-serif;
+}
+
+h1, p {
+  color: white;
+}
+
+h1 {
+  font-size: 1.5em;
+  padding-left: 5%;
+  padding-bottom: 4%;
+}
+
+p {
+  font-size: .85em;
+}
+
+.flex-grid {
+  display:flex;
+  flex:.6;
+  flex-wrap: wrap-reverse;
+}
+
+.parent-container {
+  background-color: lightgray;
+  display: flex;
+  padding: 20px;
+}
+
+.profile-picture {
+  align-items: center;
+  background-image: url("images/indie-medium.png");
+  background-size: cover;
+  flex: .4;
+  height: 100vh;
+  width: 100%; 
+}
+
+.blog {
+  background-color: #72BB7D;
+}
+
+.box {
+  flex: auto;
+  padding-top: 10%;
+  text-align: center;
+  width: 26%;
+}
+
+.buttons {
+  background: transparent;
+  border: black;
+  box-shadow: none;
+  color: white;
+  font-size: 1em;
+  outline: none;
+  padding: 20px 0px 0px 25px; 
+}
+
+.buttons:hover {
+  cursor: pointer;
+}
+
+.contact {
+  background-color: #72BB7D;
+}
+
+.experience {
+  background-color: #528AC1;
+}
+
+.education {
+  background-color: #DB682E;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.icon-profile:hover {
+  cursor: pointer;
+}
+
+.icon {
+  width: 25%;
+}
+
+.links {
+  height: 30px;
+}
+
+.main {
+  background-color: #72BB7D;
+  flex-grow: 5.1;
+  padding-top: 7%;
+  text-align: left;
+}
+
+.profile {
+  background-color: #E89C24;
+  flex: auto;
+  padding-top: 17%;
+  text-align: center;
+  width: 25.35%;
+}
+
+.portfolio {
+  background-color: #D35A4B;
+}
+
+.quotes {
+  padding: 10px 0px 0px 25px;
+}
+
+.social {
+  background-color: #DB682E;
+}
+
+/*.previous {
+    opacity: 0.3;
+    background-color: #464632;
+    color: #FFFFFF;
+}
+
+.next {
+  opacity: 0.3;
+    background-color: #464632;
+    color: #FFFFFF;
+}*/
+
+/*responsiveness*/
+
+@media screen and (max-width: 750px){
+
+  body {
+   height:100vh;
+   width:100%;
+  }
+
+  .box {
+    align-items: center;
+    flex: auto;
+    justify-content: auto;
+    padding-bottom: 5%;
+    width: 45%;
+  }
+
+  .experience {
+    background-color: #D35A4B;
+  }
+ 
+  .flex-grid {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap-reverse;
+  }
+
+  .main {
+    padding-top: 20%;
+  }
+
+  .parent-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .portfolio {
+    background-color: #528AC1;
+  }
+
+  .profile {
+    flex: auto;
+    padding-top: 17%;
+    text-align: center;
+  }
+
+  .profile-picture {
+    background-image: url("images/indie.png");
+    padding-bottom: 5%;
+    
+  }
